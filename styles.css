@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    background-color: #4E5761;
+    background: linear-gradient(to right, #4E5761 , #79C9DB);
+}
+
+.logo{
+    width: 120px;
+}
+
+nav{
+    background-color: #32585C;
+    background: linear-gradient(to right, #20343F , #79C9DB);
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2, ul{
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0 20px;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+li {
+    padding: 0 20px;
+}
+
+nav, ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li:hover, h2:hover, button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    background-color: #7FB6B6;
+
+}
+
+.menu ul{
+    text-decoration: none;
+}
+
+.menu ul, a{
+    text-decoration: none;
+    color: #090B0B;
+}
+
+footer{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 33px;
+    display: none;
+}
+
+button:focus ~ ul{
+    height: 120px;
+}
+
+/*Responsividade*/ 
+
+@media (max-width: 600px){
+
+    nav, ul {
+        flex-direction: column;
+    }
+
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    button{
+        display: flex;
+    }
+
+    nav{
+        align-items: flex-start;
+    }
+
+    li, ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin: 5px;
+    }
+
+    menu h2{
+        margin: 10px;
+    }
+}
